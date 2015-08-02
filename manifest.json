@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Steamcardexchange helper",
+  "description": "This extension modifies the html of the steamcardexchange.net user watchlist",
+  "version": "0.1",
+
+  "content_scripts": [
+	{
+      "matches": ["http://www.steamcardexchange.net/index.php?userlist*"],
+      "js": ["jquery-1.11.3.min.js","watchHelper.js"]
+    }],
+  "permissions": ["http://www.steamcardexchange.net/*"]
+}
