@@ -7,8 +7,8 @@
 
   "content_scripts": [
 	{
-      "matches": ["http://www.steamcardexchange.net/index.php?userlist*"],
+      "matches": ["http://www.steamcardexchange.net/index.php?userlist*", "https://www.steamcardexchange.net/index.php?userlist*"],
       "js": ["jquery-1.11.3.min.js","watchHelper.js"]
     }],
-  "permissions": ["http://www.steamcardexchange.net/*"]
+  "permissions": ["http://www.steamcardexchange.net/*","https://www.steamcardexchange.net/*"]
 }
